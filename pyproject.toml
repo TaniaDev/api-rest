@@ -6,7 +6,7 @@ authors = [
     {name = "Tania de Arruda", email = "develop.tania@gmail.com"},
 ]
 dependencies = [
-    "Flask>=3.0.0",
+    "fastapi>=0.105.0",
 ]
 requires-python = ">=3.10"
 readme = "README.md"
@@ -15,3 +15,17 @@ license = {text = "MIT"}
 
 [tool.pdm]
 package-type = "application"
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=7.4.3",
+]
+lint = [
+    "pylama>=8.4.1",
+]
+format = [
+    "black>=23.12.0",
+]
+git-hooks = [
+    "pre-commit>=3.6.0",
+]
